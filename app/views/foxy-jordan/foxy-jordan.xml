@@ -1,0 +1,6 @@
+<Page loaded="onLoaded">
+<StackLayout>
+<Label id="foxyJava"/>
+<Label id="jayden" text="Jayden"/>
+</StackLayout>
+</Page>
