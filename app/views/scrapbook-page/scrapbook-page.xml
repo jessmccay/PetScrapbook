@@ -1,11 +1,11 @@
 <Page loaded="onLoaded" xmlns="http://schemas.nativescript.org/tns.xsd">
   <StackLayout>
-    <Label text="{{ title, title + ' Scrapbook Page' }}" />
-    <TextField class="header" text="{{ title }}"/>
-    <Label text="{{ 'Age: ' + calcAge(date) + ' years old' }}" />
-    <DatePicker date="{{  date }}" />
-    <Label text="Gender: " />
-    <ListPicker items="{{ genders }}" selectedIndex="{{gender}}" />
-    <Button tap="onTap" text="Done" />
+    <ListView items="{{ pages }}" itemTap="onItemTap">
+      <ListView.itemTemplate> 
+        <StackLayout>
+          <Label text="{{ title, title + ' Scrapbook Page' }}" />
+        </StackLayout>
+      </ListView.itemTemplate>
+    </ListView>
   </StackLayout>
 </Page>
